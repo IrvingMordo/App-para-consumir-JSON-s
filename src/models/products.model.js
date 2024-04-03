@@ -1,11 +1,7 @@
 import { Schema,model } from "mongoose";
 const productSchema= new Schema({
-    barcode:{
-        type: String,
-        unique: true,
-        required: true
-    },
-    description: String,
+    name: String,
+    barcode:Number, 
     brand: String,
     price: Number,
     cost: Number,
